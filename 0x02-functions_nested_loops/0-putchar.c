@@ -1,19 +1,16 @@
 #include "main.h"
-
 /**
- * main - Prints _putchar as a message.
- *
- * Return: Always 0 (Success)
+ * main - prints the string "Holberton" from a character array.
+ * Return: 0 on success.
  */
 int main(void)
 {
-	int str[] = {72, 111, 108, 98, 101, 114, 116, 111, 110};
-	int count, sz;
+	char c[] = "_putchar";
+	int i;
 
-	sz = sizeof(str) / sizeof(int);
-	for (count = 0; count < sz; count++)
+	for (i = 0; i < 9; i++)
 	{
-		_putchar(str[count]);
+		_putchar(c[i]);
 	}
 	_putchar('\n');
 	return (0);
