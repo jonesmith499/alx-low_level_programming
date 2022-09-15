@@ -1,24 +1,30 @@
-#include “main.h”
+#include "holberton.h"
+
 /**
-* print_sign – function to check for a sign of a number
-* @n: is the int that will use for the argument of the function
-* Return: 0
-*/
-Int print_sign(int n)
+ * print_sign - Determines if the input number
+ * greater, iqual or less than zero.
+ *
+ * @n: The input number as an integer.
+ *
+ * Return: 1 is greater than zero. 0 is zero.
+ * -1 is less than zero.
+ */
+int print_sign(int n)
 {
-	If (n > 0)
+	if (n > 0)
 	{
-	_putchar(‘+’);
-	Return (1);
-}
-	Else if (n < 0)
+		_putchar(43);
+		return (1);
+	}
+	else if (n < 0)
 	{
-	_putchar(‘-‘);
-	Return (-1);
-        }
-	Else
+		_putchar(45);
+		return (-1);
+	}
+	else
 	{
-	_putchar(‘0’);
-	Return (0);
-        }
+		_putchar(48);
+		return (0);
+	}
+	_putchar('\n');
 }
